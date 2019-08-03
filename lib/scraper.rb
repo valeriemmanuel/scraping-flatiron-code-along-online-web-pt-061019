@@ -17,9 +17,10 @@ class Scraper
      course.title = post.css("h2").text
      
      course.description = post.css("p").text
+     binding.pry
   end
 end
-binding.pry
+
 
 # Scraper.new.get_page
   
