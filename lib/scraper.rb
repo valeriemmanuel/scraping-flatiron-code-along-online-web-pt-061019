@@ -17,12 +17,15 @@ class Scraper
      course.title = post.css("h2").text
      
      course.description = post.css("p").text
-    # binding.pry
+  
    end
   end
 end
 
-
+def get_courses
+  
+  self.get_page.css(".post")
+end
 Scraper.new.get_page
   
     def print_courses
